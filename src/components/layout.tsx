@@ -6,20 +6,20 @@ import Navbar from './navbar'
 import Footer from './footer'
 
 export type NextPageWithLayout = NextPage & {
-  getLayout?: (page: ReactElement) => ReactNode
+    getLayout?: (page: ReactElement) => ReactNode
 }
 
 type LayoutProps = {
-  children: ReactNode
+    children: ReactNode
 }
 
 export default function Layout({ children }: LayoutProps) {
-  return (
-    <div>
-      <Header></Header>
-      <Navbar></Navbar>
-      {children}
-      <Footer></Footer>
-    </div>
-  )
+    return (
+        <div>
+            <Header></Header>
+            <Navbar></Navbar>
+            {children}
+            <Footer></Footer>
+        </div>
+    )
 }
