@@ -2,6 +2,7 @@
     "name": "next-starter",
     "version": "0.1.0",
     "private": true,
+    "type": "commonjs",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
@@ -15,7 +16,9 @@
         "next-i18next": "^11.2.1",
         "react": "18.2.0",
         "react-bootstrap": "^2.4.0",
-        "react-dom": "18.2.0"
+        "react-dom": "18.2.0",
+        "source-map": "^0.7.4",
+        "stacktrace-parser": "^0.1.10"
     },
     "devDependencies": {
         "@types/node": "18.0.5",
