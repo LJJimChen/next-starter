@@ -3,7 +3,12 @@ import { GetServerSideProps, GetStaticProps, PreviewData } from 'next';
 import { ParsedUrlQuery } from 'querystring';
 import { CommonProps, CommonPropsOption } from './types';
 import { commonPropsConfig } from './config';
-
+/**
+ * 
+ * @param _getStaticProps 
+ * @param option 
+ * @returns 
+ */
 export function makeStaticProps<
     P extends { [key: string]: any } = { [key: string]: any },
     Q extends ParsedUrlQuery = ParsedUrlQuery,
@@ -26,6 +31,12 @@ export function makeStaticProps<
     return getstaticProps;
 }
 
+/**
+ * 
+ * @param _getServerSideProps 
+ * @param option 
+ * @returns 
+ */
 export function makeServerSideProps<
     P extends { [key: string]: any } = { [key: string]: any },
     Q extends ParsedUrlQuery = ParsedUrlQuery,
